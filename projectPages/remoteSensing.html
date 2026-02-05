@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Remote Sensing Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/generic_main.css" />
+		<noscript><link rel="stylesheet" href="css/generic_noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Remote Sensing and Image Processing</h1>
+						<p>Capturing and analyzing satellite imagery to extract meaningful information about the Earth's surface.</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2 style="font-weight: bold;">LiDAR Data Processing</h2>
+								<p>Through the Working with LiDAR Data in ArcGIS ESRI course, I gained experience working with multiple 
+									LiDAR data formats, including LAS/LAZ files, mosaic datasets, and point cloud scene layers. </p>
+								<p>I processed and managed point cloud data to derive a range of digital surface models, such as Digital 
+									Terrain Models (DTM), Digital Elevation Models (DEM) and Digital Surface Models (DSM). This work 
+									strengthened my understanding of LiDAR data structures, elevation workflows, and their applications 
+									in terrain analysis and environmental mapping.</p>
+
+								<h2 style="font-weight: bold;">Imagery Analysis</h2>
+								<h3>Surface reflectance of various land types</h3>
+								<p>I conducted a comprehensive study on land cover types using the Landsat 8 OLI image spanning 
+									from Lake Scugog to Bewdley in Southern Ontario. By recording the reflectance values across Bands 1 to 7 
+									during the summer of 2019, seven distinct land types were precisely characterized. The resulting graph 
+									vividly illustrates the unique spectral behaviors exhibited by each land type, providing invaluable information 
+									for accurate identification, classification, and monitoring purposes.</p>
+								<div class="image">
+									<img src="images/landCoverReflectance.png" alt="Land Cover Reflectance Graph" />
+								</div>
+
+								<h2 style="font-weight: bold;">Image Filtering</h2>
+                                <h3>Filtered satellite imagery</h3>
+                                <p>Image filtering is a key technique in digital image processing used to enhance, modify, or extract information 
+                                    by applying mathematical operations to individual pixels. It helps highlight features, reduce noise, or 
+                                    sharpen image details.</p>
+                                <p>In an analysis of SPOT panchromatic imagery from Stouffville, I examined the effects of high-pass filtering 
+                                    by comparing the spectral profiles of the original image and its 3×3 and 7×7 filtered versions. This comparison illustrated how high-pass 
+                                    filtering altered spectral characteristics, enhancing specific features for more targeted analysis and 
+                                    interpretation.</p>
+                                <button onclick="document.getElementById('myImage1').src='images/filterLowpass.PNG'">Check out the low-pass filtered image</button>
+                                <button onclick="document.getElementById('myImage1').src='images/filterOriginalGreyscale.PNG'">The original greyscale image of Stouffville</button>
+                                <button onclick="document.getElementById('myImage1').src='images/filterHighpass.PNG'">Check out the high-pass filtered image</button>
+                                <img id="myImage1" src="images/RSOriginalGreyscale.PNG" alt="" class="responsive-img"/>
+                                <h3>Band colour combinations</h3>
+                                <button onclick="document.getElementById('myImage').src='images/colorTrue.jpg'">A TRUE color band combination of Landsat 8 image.</button>
+                                <button onclick="document.getElementById('myImage').src='images/colorFalse.jpg'">A FALSE color band combination of Landsat 8 image.</button>
+                                <img id="myImage" src="images/RS_true_color.jpg" alt="" class="responsive-img"/>
+                                <!-- <h3>Spetral profiles</h3>
+                                <p>Can add the spectral profiles comparison</p>
+                                <div class="image">
+									<img src="images/spectralLowpass.png" alt="" />
+								</div>
+                                <div class="image">
+									<img src="images/spectralHighpass.png" alt="" />
+								</div> -->
+							</section>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="js/generic_jquery.min.js"></script>
+			<script src="js/generic_jquery.scrollex.min.js"></script>
+			<script src="js/generic_jquery.scrolly.min.js"></script>
+			<script src="js/generic_browser.min.js"></script>
+			<script src="js/generic_breakpoints.min.js"></script>
+			<script src="js/generic_util.js"></script>
+			<script src="js/generic_main.js"></script>
+
+
+		<!-- Button at the end-->
+		<div class="center-footer">
+			<ul class="actions">
+				<li><a href="../index.html" class="button">Return to Home</a></li>
+			</ul>
+		</div>
+	
+	</body>
+</html>

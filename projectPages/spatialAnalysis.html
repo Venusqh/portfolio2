@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Spatial Analysis Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/generic_main.css" />
+		<noscript><link rel="stylesheet" href="css/generic_noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Spatial Analysis</h1>
+						<p>Examining geographic patterns, relationships, and trends through the use 
+							of spatial data and analytical techniques.</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>Forestry Affected Zone Generator</h2>
+								<p>I conducted analysis on the AWS data from all the FMUs to identify affected areas 
+									across the district. I then built a model to overlay the five required datasets used for 
+									stakeholder notification, producing a consolidated output where attribute tables were 
+									structured and cleaned for direct use, enabling a much more efficient approach.</p>
+
+								<h2>Hydrological Modelling</h2>
+								<p>Using a USGS DEM layer, hydrological modeling was conducted to analyze the Marble Mountains 
+									in Northern California. The analysis focused on delineating the stream and drainage network, 
+									including connected stream segments and their corresponding watersheds and sub-basins.</p>
+								<div class="image">
+									<img src="images/hydrological.JPG" />
+								</div>
+								
+								<h2>Multi-Criteria Evaluation Analysis</h2>
+								<p>Using various models (following is the output of the Fuzzy Overlay model) to 
+									determine areas of Basilicata that are susceptible to badland encroachment.</p>
+								<div class="image">
+									<img src="images/suitability.JPG" />
+								</div>
+
+								<h2>Least Cost Pathway Analysis</h2>
+								<p>This map presents a least-cost path analysis model used to identify optimal hiking 
+									trails and routes in Yellowstone National Park. The methodology involves a multi-step 
+									process that considers several key criteria, including land cover, slope, wolf density, 
+									distance to existing campsites and trails, and proximity to roads. The analysis was 
+									conducted using the 'Weighted Sum' tool to generate a surface cost raster, followed by 
+									the 'Cost Distance' and 'Cost Path' tools to determine and visualize the most efficient 
+									routes based on the cumulative travel cost.</p>
+								<p>The following maps display the final combined cost surface and the resulting least-cost 
+									path between two selected points.</p>
+								<div class="image">
+									<img src="images/leastCostPath_CombinedCost.jpg" />
+								</div>
+								<div class="image">
+									<img src="images/leastCostPathway.jpg" />
+								</div>
+	
+								<h2>Geocoding and Linear Referencing</h2>
+								<p>Geocoding is the process of converting descriptive location information such as addresses, 
+									postal codes, or place names, into geographic coordinates. It enables the visualization of 
+									tabular data on a map, including plotting customer addresses, service locations, or incident reports.</p>
+								<p>Linear referencing is a spatial referencing method used to locate features along a linear path 
+									like roads, pipelines, or rivers, based on distance measurements from a known starting point. 
+									This technique is especially useful for infrastructure analysis, such as identifying maintenance 
+									zones or accident locations along highways.</p>
+								<p>ModelBuilder can automate the tasks, streamlining the conversion of large datasets into usable 
+									geographic points or events. Below are screenshots illustrating the geocoding and linear referencing 
+									(of points data) processes.</p>
+								<div class="image">
+									<img src="images/geocoding.png" />
+								</div>
+								<div class="image">
+									<img src="images/LF.png" />
+								</div>
+							</section>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="js/generic_jquery.min.js"></script>
+			<script src="js/generic_jquery.scrollex.min.js"></script>
+			<script src="js/generic_jquery.scrolly.min.js"></script>
+			<script src="js/generic_browser.min.js"></script>
+			<script src="js/generic_breakpoints.min.js"></script>
+			<script src="js/generic_util.js"></script>
+			<script src="js/generic_main.js"></script>
+
+	
+	<!-- Button at the end-->
+		<div class="center-footer">
+			<ul class="actions">
+				<li><a href="../index.html" class="button">Return to Home</a></li>
+			</ul>
+		</div>
+
+	</body>
+</html>
